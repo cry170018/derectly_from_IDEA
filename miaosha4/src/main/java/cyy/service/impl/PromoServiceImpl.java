@@ -19,12 +19,6 @@ public class PromoServiceImpl implements PromoService {
 
     @Override
     public PromoModel getPromoByItemId(Integer itemId) {
-        //我在这加几句看看git能发现不
-
-
-
-
-
 
         PromoDO promoDO = promoDOMapper.selectByItemId(itemId);
         if(promoDO==null){
